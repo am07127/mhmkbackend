@@ -10,7 +10,7 @@ dotenv.config(); // Add this line to load environment variables from .env file
 
 import caseroutes from './routes/caseroute.js';
 
-
+//new
 const mongoURL = process.env.MONGODB_URI; // Add this line to get the environment variable
 const app = Express();
 mongoose.connect(mongoURL,{useNewUrlParser: true, useUnifiedTopology: true})
