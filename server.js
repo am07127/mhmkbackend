@@ -20,7 +20,7 @@ mongoose.connect(mongoURL,{useNewUrlParser: true, useUnifiedTopology: true})
     console.error(err)
 });
 
-//app.use(cors());
+app.use(cors());
 app.use(bodyParser.json());
 app.use('/api/stories',storyroutes);
 app.use('/api/auth',auth);
