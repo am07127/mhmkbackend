@@ -7,7 +7,7 @@ import auth from './routes/auth.js';
 import dotenv from 'dotenv'; // Add this line to import dotenv
 
 dotenv.config(); // Add this line to load environment variables from .env file
-
+//latest
 import caseroutes from './routes/caseroute.js';
 
 //new
