@@ -23,6 +23,7 @@ mongoose.connect(mongoURL,{useNewUrlParser: true, useUnifiedTopology: true})
 
 app.use(bodyParser.json());
 app.use(cors());
+app.use(cors({origin:'https://localhost:3000'}));
 app.use('/api/stories',storyroutes);
 app.use('/api/auth',auth);
 app.use('/api/cases',caseroutes);
